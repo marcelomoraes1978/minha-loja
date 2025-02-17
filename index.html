@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo da Loja">
+        </div>
+        <div class="cabecalho-conteudo">
+            <h1>Bem-vindo à Minha Loja Virtual</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Carrossel de Imagens -->
+        <div class="carrossel">
+            <div class="carrossel-container">
+                <div class="carrossel-item">
+                    <img src="imagens/produto1.jpg" alt="Produto 1">
+                </div>
+                <div class="carrossel-item">
+                    <img src="imagens/produto2.jpg" alt="Produto 2">
+                </div>
+                <div class="carrossel-item">
+                    <img src="imagens/produto3.jpg" alt="Produto 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Texto Chamativo -->
+        <section class="chamada">
+            <h2>Aqui você encontra as melhores promoções do Mercado Livre e Shoppe! 🎉</h2>
+            <p>Produtos incríveis com descontos imperdíveis. Aproveite agora!</p>
+        </section>
+
+        <!-- Seção de Produtos em Destaque -->
+        <section class="destaques">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto">
+                <img src="imagens/produto1.jpg" alt="Produto 1">
+                <h3>Nome do Produto 1</h3>
+                <p>R$ 99,99</p>
+                <a href="link-do-produto-no-mercado-livre" target="_blank">Comprar</a>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto2.jpg" alt="Produto 2">
+                <h3>Nome do Produto 2</h3>
+                <p>R$ 149,99</p>
+                <a href="link-do-produto-no-mercado-livre" target="_blank">Comprar</a>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto2.jpg" alt="Produto 2">
+                <h3>Nome do Produto 2</h3>
+                <p>R$ 149,99</p>
+                <a href="link-do-produto-no-mercado-livre" target="_blank">Comprar</a>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto2.jpg" alt="Produto 2">
+                <h3>Nome do Produto 2</h3>
+                <p>R$ 149,99</p>
+                <a href="link-do-produto-no-mercado-livre" target="_blank">Comprar</a>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+    </div>
+    <script>
+        // Carrega o rodapé dinamicamente
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Erro ao carregar o rodapé:', error));
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
