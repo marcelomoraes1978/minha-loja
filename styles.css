@@ -172,30 +172,6 @@ footer {
     display: block;
 }
 
-.carrossel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-.carrossel-btn.anterior {
-    left: 10px;
-}
-
-.carrossel-btn.proximo {
-    right: 10px;
-}
-
-.carrossel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Estilos das redes sociais */
 .redes-sociais {

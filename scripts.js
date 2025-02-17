@@ -22,7 +22,7 @@ function moverCarrossel() {
 
 // Função para auto-play (sentido único)
 function iniciarAutoPlay() {
-    intervalo = setInterval(moverCarrossel, 3000); // Muda a imagem a cada 3 segundos
+    intervalo = setInterval(moverCarrossel, 5000); // Muda a imagem a cada 3 segundos
 }
 
 // Pausa o auto-play ao passar o mouse
